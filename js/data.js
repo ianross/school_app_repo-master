@@ -162,6 +162,8 @@ function TryUploadImages() {
         options.chunkedMode = false;
         var params = new Object();
         params.uuid = device.uuid;
+		params.email = SendData.email;
+		params.name = options.fileName;
         params.caption = cCaption;
         options.params = params;
         options.chunkedMode = false;
